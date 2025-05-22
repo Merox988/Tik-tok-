@@ -1,142 +1,58 @@
+import React from "react";
 
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مدونة الربح من الإنترنت</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Cairo', sans-serif;
-            background-color: #f0f2f5;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: linear-gradient(90deg, #00c6ff, #0072ff);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        header p {
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-        nav {
-            background-color: #ffffff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            text-align: center;
-            padding: 10px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #0072ff;
-            font-weight: bold;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 30px 20px;
-        }
-        article {
-            background-color: white;
-            padding: 25px;
-            margin-bottom: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-        }
-        article h2 {
-            color: #0072ff;
-        }
-        article ul {
-            padding-right: 20px;
-        }
-        article ul li {
-            margin-bottom: 10px;
-        }
-        .tiktok-video {
-            margin-top: 20px;
-            text-align: center;
-        }
-        iframe {
-            border-radius: 10px;
-            width: 100%;
-            max-width: 400px;
-            height: 600px;
-            border: none;
-        }
-        footer {
-            background-color: #333;
-            color: #ccc;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-    </style>
-</head>
-<body>
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-white text-gray-800 p-4">
+      <header className="flex justify-between items-center py-4 border-b">
+        <h1 className="text-2xl font-bold text-blue-700">PLAN AND EARN</h1>
+        <nav className="space-x-4">
+          <a href="#start" className="text-gray-600 hover:text-blue-700">ابدأ من هنا</a>
+          <a href="#contact" className="text-gray-600 hover:text-blue-700">اتصل بنا</a>
+          <a href="#about" className="text-gray-600 hover:text-blue-700">من نحن</a>
+        </nav>
+      </header>
 
-    <header>
-        <h1>مدونة الربح من الإنترنت</h1>
-        <p>اكتشف طرق الربح من الإنترنت مع التركيز على TikTok والمنصات الأخرى</p>
-    </header>
+      <section className="flex flex-col md:flex-row items-center justify-between mt-10">
+        <div className="max-w-lg">
+          <h2 className="text-3xl font-bold mb-4">كيفية الربح من الإنترنت في 2025</h2>
+          <p className="mb-4">هل تبحث عن طرق فعالة وموثوقة لتحقيق دخل مستمر عبر الإنترنت؟ تعرّف على أفضل استراتيجيات العمل الحر، التسويق بالعمولة، وإنشاء المحتوى الرقمي.</p>
+          <a href="#start" className="inline-block bg-blue-700 text-white px-4 py-2 rounded">ابدأ من هنا</a>
+        </div>
+        <img src="/illustration.png" alt="استراتيجيات الربح من الإنترنت" className="w-1/2" />
+      </section>
 
-    <nav>
-        <a href="#tiktok">تيك توك</a>
-        <a href="#affiliate">العمولة</a>
-        <a href="#freelancing">العمل الحر</a>
-        <a href="#ads">الإعلانات</a>
-    </nav>
+      <section className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 className="font-semibold text-xl mb-4">التصنيفات</h3>
+          <ul className="space-y-2">
+            <li><a href="#" className="hover:underline">الربح من التدوين</a></li>
+            <li><a href="#" className="hover:underline">العمل على منصات الفريلانسر</a></li>
+            <li><a href="#" className="hover:underline">التجارة الإلكترونية</a></li>
+            <li><a href="#" className="hover:underline">التسويق بالعمولة</a></li>
+            <li><a href="#" className="hover:underline">الذكاء الاصطناعي والربح منه</a></li>
+          </ul>
+        </div>
 
-    <div class="container">
-        <article id="tiktok">
-            <h2>الربح من تيك توك</h2>
-            <p>الربح من TikTok أصبح من أكثر الطرق شيوعاً في السنوات الأخيرة. بعض الطرق تشمل:</p>
-            <ul>
-                <li>البث المباشر والحصول على الهدايا.</li>
-                <li>التسويق بالعمولة من خلال روابط المنتجات.</li>
-                <li>الترويج لمنتجاتك الخاصة.</li>
-                <li>الانضمام لبرنامج TikTok Creator Fund.</li>
-            </ul>
+        <div>
+          <h3 className="font-semibold text-xl mb-4">مقالات مميزة</h3>
+          <ul className="space-y-2">
+            <li><a href="#" className="hover:underline">أفضل مواقع العمل الحر للمبتدئين في 2025</a></li>
+            <li><a href="#" className="hover:underline">كيفية البدء في التسويق بالعمولة خطوة بخطوة</a></li>
+            <li><a href="#" className="hover:underline">دليل إنشاء قناة يوتيوب والربح منها</a></li>
+            <li><a href="#" className="hover:underline">الذكاء الاصطناعي: أدوات تساعدك على الربح من الإنترنت</a></li>
+          </ul>
+        </div>
 
-            <div class="tiktok-video">
-                <h3>مثال على محتوى TikTok:</h3>
-                <iframe src="https://www.tiktok.com/embed/7275545090667883802" allowfullscreen></iframe>
-            </div>
-        </article>
+        <div id="start">
+          <h3 className="font-semibold text-xl mb-4">ابدأ من هنا</h3>
+          <p>هل أنت مبتدئ في عالم الربح من الإنترنت؟ نوفر لك دليلًا مجانيًا يشمل أهم الخطوات والنصائح التي تحتاجها للانطلاق بنجاح.</p>
+          <a href="#" className="inline-block mt-2 bg-blue-700 text-white px-3 py-1 rounded">تحميل الدليل المجاني</a>
+        </div>
+      </section>
 
-        <article id="affiliate">
-            <h2>التسويق بالعمولة</h2>
-            <p>من خلال الانضمام إلى شبكات مثل Amazon أو Digistore أو CJ Affiliate يمكنك كسب عمولات على المبيعات.</p>
-        </article>
-
-        <article id="freelancing">
-            <h2>العمل الحر (Freelancing)</h2>
-            <p>العمل الحر متاح عبر منصات مثل خمسات، مستقل، Fiverr وUpwork. اختر مهارة مثل التصميم أو البرمجة أو الكتابة.</p>
-        </article>
-
-        <article id="ads">
-            <h2>الإعلانات والمدونات</h2>
-            <p>يمكنك إنشاء موقع أو مدونة والربح من الإعلانات عبر Google AdSense أو رعاية المحتوى.</p>
-        </article>
-    </div>
-
-    <footer>
-        <p>جميع الحقوق محفوظة © 2025 - مدونة الربح من الإنترنت</p>
-    </footer>
-
-
-    <script>
-        document.addEventListener("click", function () {
-            window.location.href = "https://merox988.github.io/Plan-earn/ "; // غيّر الرابط إلى الوجهة التي تريدها
-        });
-    </script>
-
-</body>
-</html>
+      <footer className="mt-16 py-4 border-t text-center text-sm text-gray-500">
+        <p>جميع الحقوق محفوظة &copy; 2025 | <a href="#" className="hover:underline">سياسة الخصوصية</a> | <a href="#" className="hover:underline">الشروط والأحكام</a></p>
+      </footer>
+    </main>
+  );
+}
